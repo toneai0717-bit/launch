@@ -47,6 +47,21 @@ Tagline（60文字以内）とDescription（300文字程度）を生成。
 ---TAGLINE---
 サービスの一言キャッチフレーズ（日本語・10〜15字程度）
 
+---X_THREAD_B---
+Xバズりスレッド【パターンB】（5〜7ツイート構成）
+パターンAとは異なるアングル・切り口で。
+例：パターンAが「問題提起型」ならBは「ビフォーアフター型」や「数字で語る型」にする。
+
+---BEST_TIME---
+最適な投稿時間帯の提案
+ターゲットユーザーの属性・業界・行動パターンを分析して、
+曜日・時間帯・理由をセットで3パターン提案する。
+
+---TRENDS---
+このプロダクトに関連するトレンドワード・ハッシュタグ提案
+今の業界トレンドと掛け合わせることでバズりやすくなるキーワードを10個提案。
+なぜそのワードが有効かの理由も一言添える。
+
 各セクションは必ず上記の「---セクション名---」で区切ること。`,
         },
       ],
@@ -57,7 +72,7 @@ Tagline（60文字以内）とDescription（300文字程度）を生成。
 
     // セクションごとにパース
     const sections: Record<string, string> = {};
-    const sectionNames = ["LP_HERO", "X_THREAD", "PRODUCT_HUNT", "COMMUNITY", "TAGLINE"];
+    const sectionNames = ["LP_HERO", "X_THREAD", "PRODUCT_HUNT", "COMMUNITY", "TAGLINE", "X_THREAD_B", "BEST_TIME", "TRENDS"];
 
     for (let i = 0; i < sectionNames.length; i++) {
       const name = sectionNames[i];

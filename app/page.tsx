@@ -14,10 +14,13 @@ interface Product {
 
 const TABS = [
   { key: "LP_HERO", label: "🖥️ LPコピー" },
-  { key: "X_THREAD", label: "𝕏 Xスレッド" },
+  { key: "X_THREAD", label: "𝕏 スレッドA" },
+  { key: "X_THREAD_B", label: "𝕏 スレッドB" },
   { key: "PRODUCT_HUNT", label: "🚀 Product Hunt" },
   { key: "COMMUNITY", label: "💬 コミュニティ" },
   { key: "TAGLINE", label: "✨ タグライン" },
+  { key: "BEST_TIME", label: "⏰ 最適時間帯" },
+  { key: "TRENDS", label: "📈 トレンド" },
 ];
 
 export default function Home() {
